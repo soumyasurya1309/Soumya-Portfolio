@@ -115,17 +115,17 @@ document.addEventListener('DOMContentLoaded', function () {
   var savedTheme = localStorage.getItem('portfolio-theme');
   if (savedTheme === 'light') {
     document.body.classList.add('light-mode');
-    themeIcon.textContent = '☀';
+    if (themeIcon) {
+      themeIcon.textContent = '☀';
+    }
   }
 
   function toggleTheme() {
-
     document.body.classList.toggle('light-mode');
-
     var isLight = document.body.classList.contains('light-mode');
-
-    themeIcon.textContent = isLight ? '☀' : '☾';
-
+    if (themeIcon) {
+      themeIcon.textContent = isLight ? '☀' : '☾';
+    }
     localStorage.setItem('portfolio-theme', isLight ? 'light' : 'dark');
   }
 
@@ -138,11 +138,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   filterButtons.forEach(function (btn) {
     btn.addEventListener('click', function () {
-
       filterButtons.forEach(function (b) {
         b.classList.remove('active');
       });
-
       this.classList.add('active');
 
       var selectedFilter = this.getAttribute('data-filter');
@@ -151,13 +149,10 @@ document.addEventListener('DOMContentLoaded', function () {
         var cardCategory = card.getAttribute('data-category');
 
         if (selectedFilter === 'all') {
-
           card.classList.remove('hidden');
         } else if (cardCategory === selectedFilter) {
-
           card.classList.remove('hidden');
         } else {
-
           card.classList.add('hidden');
         }
       });
@@ -171,10 +166,10 @@ document.addEventListener('DOMContentLoaded', function () {
   var certModalTitle   = document.getElementById('modal-title');
 
   var certImageMap = {
-    'Google AI Professional Certificate':       'certificates/google-ai.jpg',
-    'Deloitte Technology Virtual Job Simulation': 'certificates/deloitte.jpg',
-    'Red Hat System Administration I':          'certificates/redhat-admin.jpg',
-    'Python Programming – Red Hat Academy':     'certificates/redhat-python.jpg'
+    'Google AI Professional Certificate':       'certificates/google-ai.svg',
+    'Deloitte Technology Virtual Job Simulation': 'certificates/deloitte.svg',
+    'Red Hat System Administration I':          'certificates/redhat-admin.svg',
+    'Python Programming – Red Hat Academy':     'certificates/redhat-python.svg'
   };
 
   var certPreviewBtns = document.querySelectorAll('.cert-preview-btn');

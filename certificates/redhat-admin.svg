@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="1200" height="850">
+  <defs>
+    <linearGradient id="rhBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140b0d"/>
+      <stop offset="60%" stop-color="#1c1013"/>
+      <stop offset="100%" stop-color="#0a0507"/>
+    </linearGradient>
+    <linearGradient id="rhRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3333"/>
+      <stop offset="100%" stop-color="#ee0000"/>
+    </linearGradient>
+    <filter id="rhShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="850" fill="url(#rhBg)"/>
+
+  <!-- Technical Framing -->
+  <rect x="25" y="25" width="1150" height="800" rx="8" fill="none" stroke="#3b1b22" stroke-width="2"/>
+  <rect x="35" y="35" width="1130" height="780" rx="6" fill="none" stroke="rgba(238, 0, 0, 0.4)" stroke-width="1.2" stroke-dasharray="10 6"/>
+  <rect x="45" y="45" width="1110" height="760" rx="4" fill="none" stroke="#251216" stroke-width="1"/>
+
+  <!-- Brackets -->
+  <path d="M 50 85 L 50 50 L 85 50" stroke="#ee0000" stroke-width="3" fill="none"/>
+  <path d="M 1150 85 L 1150 50 L 1115 50" stroke="#ee0000" stroke-width="3" fill="none"/>
+  <path d="M 50 765 L 50 800 L 85 800" stroke="#ee0000" stroke-width="3" fill="none"/>
+  <path d="M 1150 765 L 1150 800 L 1115 800" stroke="#ee0000" stroke-width="3" fill="none"/>
+
+  <!-- Red Hat Brand Header -->
+  <g transform="translate(600, 115)" text-anchor="middle">
+    <text font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="36" fill="#ee0000" letter-spacing="1">Red Hat<tspan fill="#ffffff"> Academy</tspan></text>
+    <text y="30" font-family="'Inter', sans-serif" font-weight="600" font-size="13" fill="#c49ca4" letter-spacing="4">ENTERPRISE LINUX SYSTEM ADMINISTRATION</text>
+  </g>
+
+  <!-- Title & Recipient -->
+  <g transform="translate(600, 230)" text-anchor="middle">
+    <text font-family="'Outfit', 'Inter', sans-serif" font-weight="300" font-size="17" fill="#b9939a" letter-spacing="3">CERTIFICATE OF ACHIEVEMENT</text>
+    <text y="65" font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="46" fill="#ffffff" letter-spacing="1">SOUMYA SURYAWANSHI</text>
+    <line x1="-240" y1="90" x2="240" y2="90" stroke="#ee0000" stroke-width="2"/>
+    <text y="130" font-family="'Inter', sans-serif" font-weight="400" font-size="17" fill="#d0b4ba">has successfully completed the formal curriculum and practical examinations for</text>
+    <text y="175" font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="34" fill="#ee0000">Red Hat System Administration I (RH124)</text>
+  </g>
+
+  <!-- Modules Completed -->
+  <g transform="translate(600, 480)" text-anchor="middle">
+    <rect x="-420" y="0" width="840" height="110" rx="8" fill="#241116" stroke="#4a1f29" stroke-width="1.2"/>
+    <text y="32" font-family="'JetBrains Mono', monospace" font-size="12" fill="#ee0000" letter-spacing="2">CORE COMPETENCIES VERIFIED</text>
+    <text y="62" font-family="'Inter', sans-serif" font-size="15" fill="#e8d3d7">RHEL Command Line Navigation • File &amp; Directory Permissions • Process Management</text>
+    <text y="88" font-family="'Inter', sans-serif" font-size="15" fill="#e8d3d7">systemd Services • Storage Systems • Network Configuration &amp; SSH Security</text>
+  </g>
+
+  <!-- Signatures & Seal -->
+  <g transform="translate(260, 680)" text-anchor="middle">
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#52242e" stroke-width="1.5"/>
+    <text y="24" font-family="'Inter', sans-serif" font-weight="600" font-size="15" fill="#ffffff">Red Hat Academy Director</text>
+    <text y="44" font-family="'Inter', sans-serif" font-size="12" fill="#996a74">Authorized Program Signatory</text>
+  </g>
+
+  <g transform="translate(600, 670)" filter="url(#rhShadow)">
+    <circle r="46" fill="url(#rhRed)"/>
+    <circle r="40" fill="#14090c" stroke="#ee0000" stroke-width="1.8"/>
+    <text y="-8" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="11" fill="#ee0000">RED HAT</text>
+    <text y="8" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="10" fill="#ffffff">RH124</text>
+    <text y="22" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8" fill="#ee0000">2025</text>
+  </g>
+
+  <g transform="translate(940, 680)" text-anchor="middle">
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#52242e" stroke-width="1.5"/>
+    <text y="24" font-family="'Inter', sans-serif" font-weight="600" font-size="15" fill="#ffffff">Institutional Instructor</text>
+    <text y="44" font-family="'Inter', sans-serif" font-size="12" fill="#996a74">SIT Nagpur Coordinator</text>
+  </g>
+
+  <!-- Metadata -->
+  <g transform="translate(600, 785)" text-anchor="middle">
+    <text font-family="'JetBrains Mono', monospace" font-size="11" fill="#784752">CREDENTIAL ID: RHA-RH124-2025-44812 • ISSUED: 2025 • RED HAT ENTERPRISE LINUX</text>
+  </g>
+</svg>

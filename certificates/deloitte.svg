@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="1200" height="850">
+  <defs>
+    <linearGradient id="delBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f14"/>
+      <stop offset="60%" stop-color="#11161d"/>
+      <stop offset="100%" stop-color="#080a0e"/>
+    </linearGradient>
+    <linearGradient id="deloitteGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9dd33b"/>
+      <stop offset="100%" stop-color="#86bc25"/>
+    </linearGradient>
+    <filter id="delShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="850" fill="url(#delBg)"/>
+
+  <!-- Technical Framing -->
+  <rect x="25" y="25" width="1150" height="800" rx="8" fill="none" stroke="#222b38" stroke-width="2"/>
+  <rect x="35" y="35" width="1130" height="780" rx="6" fill="none" stroke="rgba(134, 188, 37, 0.4)" stroke-width="1.2" stroke-dasharray="8 6"/>
+  <rect x="45" y="45" width="1110" height="760" rx="4" fill="none" stroke="#181f29" stroke-width="1"/>
+
+  <!-- Brackets -->
+  <path d="M 50 85 L 50 50 L 85 50" stroke="#86bc25" stroke-width="3" fill="none"/>
+  <path d="M 1150 85 L 1150 50 L 1115 50" stroke="#86bc25" stroke-width="3" fill="none"/>
+  <path d="M 50 765 L 50 800 L 85 800" stroke="#86bc25" stroke-width="3" fill="none"/>
+  <path d="M 1150 765 L 1150 800 L 1115 800" stroke="#86bc25" stroke-width="3" fill="none"/>
+
+  <!-- Deloitte Brand Header -->
+  <g transform="translate(600, 115)" text-anchor="middle">
+    <text font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="42" fill="#ffffff" letter-spacing="-1">Deloitte<tspan fill="#86bc25">.</tspan></text>
+    <text y="32" font-family="'Inter', sans-serif" font-weight="600" font-size="13" fill="#8da2c0" letter-spacing="4">TECHNOLOGY VIRTUAL JOB SIMULATION • FORAGE</text>
+  </g>
+
+  <!-- Title & Recipient -->
+  <g transform="translate(600, 230)" text-anchor="middle">
+    <text font-family="'Outfit', 'Inter', sans-serif" font-weight="300" font-size="17" fill="#8da2c0" letter-spacing="3">CERTIFICATE OF COMPLETION</text>
+    <text y="65" font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="46" fill="#ffffff" letter-spacing="1">SOUMYA SURYAWANSHI</text>
+    <line x1="-240" y1="90" x2="240" y2="90" stroke="#86bc25" stroke-width="2"/>
+    <text y="130" font-family="'Inter', sans-serif" font-weight="400" font-size="17" fill="#a4b3c6">has successfully demonstrated industry-standard technology consulting competencies in the</text>
+    <text y="175" font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="34" fill="#86bc25">Deloitte Technology Virtual Experience Program</text>
+  </g>
+
+  <!-- Simulation Work Completed -->
+  <g transform="translate(600, 480)" text-anchor="middle">
+    <rect x="-420" y="0" width="840" height="110" rx="8" fill="#131b24" stroke="#253547" stroke-width="1.2"/>
+    <text y="32" font-family="'JetBrains Mono', monospace" font-size="12" fill="#86bc25" letter-spacing="2">SIMULATION DELIVERABLES VERIFIED</text>
+    <text y="62" font-family="'Inter', sans-serif" font-size="15" fill="#d2d9e5">Practical Software Engineering Design • Cloud Data Architecture &amp; Dashboard Analytics</text>
+    <text y="88" font-family="'Inter', sans-serif" font-size="15" fill="#d2d9e5">Technology Consulting Case Analysis • Cybersecurity Risk Assessment</text>
+  </g>
+
+  <!-- Signatures & Seal -->
+  <g transform="translate(260, 680)" text-anchor="middle">
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#334254" stroke-width="1.5"/>
+    <text y="24" font-family="'Inter', sans-serif" font-weight="600" font-size="15" fill="#ffffff">Deloitte Technology Team</text>
+    <text y="44" font-family="'Inter', sans-serif" font-size="12" fill="#718299">Consulting Practice Lead</text>
+  </g>
+
+  <g transform="translate(600, 670)" filter="url(#delShadow)">
+    <circle r="46" fill="url(#deloitteGreen)"/>
+    <circle r="40" fill="#0d1319" stroke="#86bc25" stroke-width="1.8"/>
+    <text y="-8" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="12" fill="#86bc25">FORAGE</text>
+    <text y="8" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="10" fill="#ffffff">VERIFIED</text>
+    <text y="22" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8" fill="#86bc25">2026</text>
+  </g>
+
+  <g transform="translate(940, 680)" text-anchor="middle">
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#334254" stroke-width="1.5"/>
+    <text y="24" font-family="'Inter', sans-serif" font-weight="600" font-size="15" fill="#ffffff">Forage Platform Director</text>
+    <text y="44" font-family="'Inter', sans-serif" font-size="12" fill="#718299">Verification Authority</text>
+  </g>
+
+  <!-- Metadata -->
+  <g transform="translate(600, 785)" text-anchor="middle">
+    <text font-family="'JetBrains Mono', monospace" font-size="11" fill="#52647c">CREDENTIAL ID: DEL-TECH-VJS-2026-99214 • ISSUED: 2026 • DELOITTE CONSULTING &amp; FORAGE</text>
+  </g>
+</svg>

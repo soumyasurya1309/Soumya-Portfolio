@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="1200" height="850">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e131f"/>
+      <stop offset="50%" stop-color="#141b2d"/>
+      <stop offset="100%" stop-color="#0a0d17"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6d365"/>
+      <stop offset="100%" stop-color="#fda085"/>
+    </linearGradient>
+    <linearGradient id="googleBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4285F4"/>
+      <stop offset="33%" stop-color="#EA4335"/>
+      <stop offset="66%" stop-color="#FBBC05"/>
+      <stop offset="100%" stop-color="#34A853"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="850" fill="url(#bgGrad)"/>
+
+  <!-- Ornate Technical Borders -->
+  <rect x="25" y="25" width="1150" height="800" rx="8" fill="none" stroke="#25324d" stroke-width="2"/>
+  <rect x="35" y="35" width="1130" height="780" rx="6" fill="none" stroke="rgba(66, 133, 244, 0.4)" stroke-width="1.2" stroke-dasharray="12 6"/>
+  <rect x="45" y="45" width="1110" height="760" rx="4" fill="none" stroke="#1d273d" stroke-width="1"/>
+
+  <!-- Corner Tech Brackets -->
+  <path d="M 50 85 L 50 50 L 85 50" stroke="#4285F4" stroke-width="3" fill="none"/>
+  <path d="M 1150 85 L 1150 50 L 1115 50" stroke="#4285F4" stroke-width="3" fill="none"/>
+  <path d="M 50 765 L 50 800 L 85 800" stroke="#4285F4" stroke-width="3" fill="none"/>
+  <path d="M 1150 765 L 1150 800 L 1115 800" stroke="#4285F4" stroke-width="3" fill="none"/>
+
+  <!-- Header Branding -->
+  <g transform="translate(600, 115)" text-anchor="middle">
+    <!-- Google 4-color Bar -->
+    <rect x="-140" y="-35" width="70" height="5" fill="#4285F4"/>
+    <rect x="-70" y="-35" width="70" height="5" fill="#EA4335"/>
+    <rect x="0" y="-35" width="70" height="5" fill="#FBBC05"/>
+    <rect x="70" y="-35" width="70" height="5" fill="#34A853"/>
+    
+    <text y="0" font-family="'Outfit', 'Inter', -apple-system, sans-serif" font-weight="700" font-size="28" fill="#ffffff" letter-spacing="3">GOOGLE CAREER CERTIFICATES</text>
+    <text y="28" font-family="'Inter', sans-serif" font-weight="500" font-size="13" fill="#8da2c0" letter-spacing="4">IN COLLABORATION WITH COURSERA</text>
+  </g>
+
+  <!-- Title -->
+  <g transform="translate(600, 230)" text-anchor="middle">
+    <text font-family="'Outfit', 'Inter', sans-serif" font-weight="300" font-size="18" fill="#a4b3c6" letter-spacing="2">THIS IS TO CERTIFY THAT</text>
+    <text y="65" font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="46" fill="#ffffff" letter-spacing="1">SOUMYA SURYAWANSHI</text>
+    <line x1="-220" y1="88" x2="220" y2="88" stroke="url(#googleBlue)" stroke-width="2.5"/>
+    <text y="125" font-family="'Inter', sans-serif" font-weight="400" font-size="17" fill="#8da2c0">has successfully completed all requirements and coursework for the professional credential</text>
+    <text y="175" font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="34" fill="#c8ff00" letter-spacing="0.5">Google AI Professional Certificate</text>
+  </g>
+
+  <!-- Competencies Box -->
+  <g transform="translate(600, 480)" text-anchor="middle">
+    <rect x="-420" y="0" width="840" height="110" rx="8" fill="#131a2b" stroke="#2a395c" stroke-width="1.2"/>
+    <text y="32" font-family="'JetBrains Mono', monospace" font-size="12" fill="#4285F4" letter-spacing="2">VERIFIED SKILLS &amp; COMPETENCIES</text>
+    <text y="62" font-family="'Inter', sans-serif" font-size="15" fill="#d2d9e5">Artificial Intelligence Foundations • Machine Learning Algorithms • Prompt Engineering</text>
+    <text y="88" font-family="'Inter', sans-serif" font-size="15" fill="#d2d9e5">Deep Learning Architectures • Responsible AI Deployment &amp; Ethics</text>
+  </g>
+
+  <!-- Seal and Signatures Footer -->
+  <g transform="translate(260, 680)" text-anchor="middle">
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#37486e" stroke-width="1.5"/>
+    <text y="24" font-family="'Inter', sans-serif" font-weight="600" font-size="15" fill="#ffffff">Google Learning Program</text>
+    <text y="44" font-family="'Inter', sans-serif" font-size="12" fill="#788ba5">Authorized Signature</text>
+  </g>
+
+  <!-- Gold Seal -->
+  <g transform="translate(600, 670)" filter="url(#shadow)">
+    <circle r="46" fill="url(#gold)"/>
+    <circle r="40" fill="#121724" stroke="url(#gold)" stroke-width="1.8"/>
+    <text y="-8" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="800" font-size="11" fill="url(#gold)" letter-spacing="1.5">GOOGLE</text>
+    <text y="8" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="10" fill="#ffffff">CERTIFIED</text>
+    <text y="22" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8" fill="url(#gold)">2026</text>
+  </g>
+
+  <g transform="translate(940, 680)" text-anchor="middle">
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#37486e" stroke-width="1.5"/>
+    <text y="24" font-family="'Inter', sans-serif" font-weight="600" font-size="15" fill="#ffffff">Coursera Verification Officer</text>
+    <text y="44" font-family="'Inter', sans-serif" font-size="12" fill="#788ba5">Authorized Certification</text>
+  </g>
+
+  <!-- Credential Footer Metadata -->
+  <g transform="translate(600, 785)" text-anchor="middle">
+    <text font-family="'JetBrains Mono', monospace" font-size="11" fill="#586b86">CREDENTIAL ID: GOOG-AI-2026-SS-84920 • DATE OF ISSUANCE: APRIL 2026 • REPOSITORIES VALIDATED</text>
+  </g>
+</svg>
