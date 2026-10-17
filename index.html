@@ -3,23 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Soumya Suryawanshi – Software Engineering Intern, Full-Stack Developer & AI/ML Specialist. B.Tech CS student at Symbiosis Institute of Technology, Nagpur." />
-  <meta name="keywords" content="Soumya Suryawanshi, portfolio, software engineer, AI ML, Flutter, Firebase, full-stack developer" />
+  <meta name="description" content="Soumya Suryawanshi — Computer Science undergraduate specializing in AI/ML. Building scalable applications with Flutter, Firebase, and Python. Published patent holder and software engineering intern." />
+  <meta name="keywords" content="Soumya Suryawanshi, portfolio, software engineer, AI ML, Flutter, Firebase, full-stack developer, computer science" />
   <meta name="author" content="Soumya Suryawanshi" />
-  <title>Soumya Suryawanshi | Software Engineer & AI/ML Developer</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Soumya Suryawanshi — The Compute Archive" />
+  <meta property="og:description" content="Computer Science undergraduate specializing in AI/ML. Building scalable applications with Flutter, Firebase, and Python." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/profile.jpg" />
+
+  <title>Soumya Suryawanshi | The Compute Archive</title>
+
   <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
+  <!-- ═══════════════════════ HEADER ═══════════════════════ -->
   <header id="main-header">
     <nav id="navbar" aria-label="Main navigation">
       <div class="nav-logo">
-        <a href="#hero" id="logo-link">SS<span class="logo-dot">.</span></a>
+        <a href="#hero" id="logo-link">
+          <span class="logo-text">SS</span><span class="logo-dot">.</span>
+        </a>
       </div>
 
       <button id="hamburger-btn" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -29,74 +43,100 @@
       </button>
 
       <ul id="nav-menu" class="nav-menu" role="list">
-        <li><a href="#about"        class="nav-link" id="nav-about">About</a></li>
-        <li><a href="#education"    class="nav-link" id="nav-education">Education</a></li>
-        <li><a href="#skills"       class="nav-link" id="nav-skills">Skills</a></li>
-        <li><a href="#projects"     class="nav-link" id="nav-projects">Projects</a></li>
-        <li><a href="#experience"   class="nav-link" id="nav-experience">Experience</a></li>
-        <li><a href="#achievements" class="nav-link" id="nav-achievements">Achievements</a></li>
-        <li><a href="#certificates" class="nav-link" id="nav-certificates">Certificates</a></li>
-        <li><a href="#gallery"      class="nav-link" id="nav-gallery">Gallery</a></li>
-        <li><a href="#contact"      class="nav-link" id="nav-contact">Contact</a></li>
+        <li><a href="#about"        class="nav-link" id="nav-about"><span class="nav-index">01</span>About</a></li>
+        <li><a href="#skills"       class="nav-link" id="nav-skills"><span class="nav-index">02</span>Skills</a></li>
+        <li><a href="#projects"     class="nav-link" id="nav-projects"><span class="nav-index">03</span>Projects</a></li>
+        <li><a href="#experience"   class="nav-link" id="nav-experience"><span class="nav-index">04</span>Experience</a></li>
+        <li><a href="#achievements" class="nav-link" id="nav-achievements"><span class="nav-index">05</span>Achievements</a></li>
+        <li><a href="#education"    class="nav-link" id="nav-education"><span class="nav-index">06</span>Education</a></li>
+        <li><a href="#certificates" class="nav-link" id="nav-certificates"><span class="nav-index">07</span>Certificates</a></li>
+        <li><a href="#gallery"      class="nav-link" id="nav-gallery"><span class="nav-index">08</span>Gallery</a></li>
+        <li><a href="#contact"      class="nav-link" id="nav-contact"><span class="nav-index">09</span>Contact</a></li>
       </ul>
-
-      <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
-        <span id="theme-icon">&#9790;</span>
-      </button>
     </nav>
   </header>
 
   <main>
 
+    <!-- ═══════════════════════ HERO ═══════════════════════ -->
     <section id="hero" class="section hero-section">
+      <!-- Subtle grid background -->
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+
       <div class="hero-content">
-        <div class="hero-text" data-animate>
-          <p class="hero-greeting">Hello, I'm</p>
-          <h1 class="hero-name">Soumya <span class="accent-text">Suryawanshi</span></h1>
-          <p class="hero-tagline" id="hero-tagline">Software Engineer &amp; AI/ML Developer</p>
-          <p class="hero-description">
-            Computer Science undergraduate specializing in <strong>Artificial Intelligence and Machine Learning</strong>.
-            Building cloud-connected, full-stack applications with Flutter, Firebase, and Python.
-          </p>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary" id="hero-projects-btn">View Projects</a>
-            <a href="resume/Soumya_Suryawanshi_Resume.pdf" class="btn btn-outline" id="hero-resume-btn" target="_blank" rel="noopener noreferrer">Download Resume</a>
-            <a href="#contact" class="btn btn-ghost" id="hero-contact-btn">Contact Me</a>
+        <div class="hero-left" data-animate>
+          <div class="hero-meta-bar">
+            <span class="meta-chip">B.Tech CS — AI/ML '28</span>
+            <span class="meta-chip">Nagpur, India</span>
+            <span class="meta-chip status-chip">Open to Opportunities</span>
           </div>
+
+          <h1 class="hero-name">
+            <span class="hero-name-line hero-name-first">Soumya</span>
+            <span class="hero-name-line hero-name-last">Suryawanshi<span class="accent-dot">.</span></span>
+          </h1>
+
+          <p class="hero-tagline">Computer Science undergraduate specializing in <strong>Artificial Intelligence and Machine Learning</strong>. Building cloud-connected, full-stack applications with Flutter, Firebase, and Python.</p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="hero-projects-btn">
+              <span>Explore Projects</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="resume/Soumya_Suryawanshi_Resume.pdf" class="btn btn-outline" id="hero-resume-btn" target="_blank" rel="noopener noreferrer">
+              <span>Resume</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost" id="hero-contact-btn">Contact</a>
+          </div>
+
           <div class="hero-social-links">
             <a href="https://linkedin.com/in/soumyasuryawanshi" class="social-link" id="social-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             </a>
             <a href="https://github.com/soumyasurya1309" class="social-link" id="social-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
             </a>
             <a href="mailto:soumyasuryawanshi139@gmail.com" class="social-link" id="social-email" aria-label="Email">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
             </a>
             <a href="tel:+917709299542" class="social-link" id="social-phone" aria-label="Phone">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
             </a>
           </div>
         </div>
-        <div class="hero-image-wrapper" data-animate>
-          <div class="hero-image-ring">
-            <img src="images/profile.jpg" alt="Soumya Suryawanshi – Software Engineer" class="hero-profile-img" id="hero-profile-photo" />
+
+        <div class="hero-right" data-animate>
+          <div class="hero-image-container">
+            <div class="hero-image-frame">
+              <img src="images/profile.jpg" alt="Soumya Suryawanshi — Computer Science & AI/ML" class="hero-profile-img" id="hero-profile-photo" />
+            </div>
+            <div class="hero-image-decoration" aria-hidden="true">
+              <span class="deco-label">// COMPUTE_ARCHIVE</span>
+              <span class="deco-coords">21.1458° N, 79.0882° E</span>
+            </div>
           </div>
-          <div class="hero-badge badge-top">AI/ML Specialist</div>
-          <div class="hero-badge badge-bottom">B.Tech CS '28</div>
         </div>
       </div>
+
       <div class="hero-scroll-indicator" aria-hidden="true">
-        <span class="scroll-dot"></span>
+        <span class="scroll-line"></span>
+        <span class="scroll-label">Scroll</span>
       </div>
     </section>
 
+    <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
     <section id="about" class="section about-section">
       <div class="container">
-        <h2 class="section-title" data-animate>About <span class="accent-text">Me</span></h2>
+        <div class="section-header" data-animate>
+          <span class="section-index">01</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
         <div class="about-grid">
-          <div class="about-text" data-animate>
-            <p>
+          <div class="about-narrative" data-animate>
+            <p class="about-lead">
               I'm <strong>Soumya Suryawanshi</strong>, a Computer Science undergraduate at
               <strong>Symbiosis Institute of Technology, Nagpur</strong> (B.Tech AI/ML Specialization, Class of 2028).
               I specialize in building scalable, cloud-connected applications with a focus on
@@ -111,83 +151,59 @@
               Beyond coding, I contribute to open-source communities, participate in hackathons,
               and continuously sharpen my skills through industry certifications.
             </p>
-            <div class="about-stats">
-              <div class="stat-card">
-                <span class="stat-number">3+</span>
-                <span class="stat-label">Major Projects</span>
-              </div>
-              <div class="stat-card">
-                <span class="stat-number">1</span>
-                <span class="stat-label">Patent Published</span>
-              </div>
-              <div class="stat-card">
-                <span class="stat-number">4+</span>
-                <span class="stat-label">Certifications</span>
-              </div>
-              <div class="stat-card">
-                <span class="stat-number">2</span>
-                <span class="stat-label">Internships</span>
-              </div>
-            </div>
           </div>
-          <div class="about-info-card" data-animate>
-            <h3>Quick Info</h3>
+
+          <div class="about-info-panel" data-animate>
+            <h3 class="panel-title">Quick Reference</h3>
             <ul class="info-list">
-              <li><span class="info-label">Name</span><span class="info-value">Soumya Suryawanshi</span></li>
-              <li><span class="info-label">Degree</span><span class="info-value">B.Tech CS (AI/ML) 2028</span></li>
-              <li><span class="info-label">Institute</span><span class="info-value">SIT, Nagpur</span></li>
-              <li><span class="info-label">Phone</span><span class="info-value">+91 77092 99542</span></li>
-              <li><span class="info-label">Email</span><span class="info-value">soumyasuryawanshi139@gmail.com</span></li>
-              <li><span class="info-label">Location</span><span class="info-value">Nagpur, India</span></li>
-              <li><span class="info-label">Status</span><span class="info-value available">Open to Opportunities</span></li>
+              <li><span class="info-key">Name</span><span class="info-val">Soumya Suryawanshi</span></li>
+              <li><span class="info-key">Degree</span><span class="info-val">B.Tech CS (AI/ML) 2028</span></li>
+              <li><span class="info-key">Institute</span><span class="info-val">SIT, Nagpur</span></li>
+              <li><span class="info-key">Phone</span><span class="info-val">+91 77092 99542</span></li>
+              <li><span class="info-key">Email</span><span class="info-val">soumyasuryawanshi139@gmail.com</span></li>
+              <li><span class="info-key">Location</span><span class="info-val">Nagpur, India</span></li>
+              <li><span class="info-key">Status</span><span class="info-val val-active">Open to Opportunities</span></li>
             </ul>
+
+            <div class="about-metrics">
+              <div class="metric">
+                <span class="metric-num">3+</span>
+                <span class="metric-label">Major Projects</span>
+              </div>
+              <div class="metric">
+                <span class="metric-num">1</span>
+                <span class="metric-label">Patent Published</span>
+              </div>
+              <div class="metric">
+                <span class="metric-num">4+</span>
+                <span class="metric-label">Certifications</span>
+              </div>
+              <div class="metric">
+                <span class="metric-num">2</span>
+                <span class="metric-label">Internships</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="education" class="section education-section">
-      <div class="container">
-        <h2 class="section-title" data-animate>Education &amp; <span class="accent-text">Academics</span></h2>
-        <div class="timeline" data-animate>
-          <article class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <h3>B.Tech in Computer Science</h3>
-                <span class="timeline-badge">2024 – 2028</span>
-              </div>
-              <p class="timeline-subtitle">AI/ML Specialization</p>
-              <p class="timeline-institution">Symbiosis Institute of Technology, Nagpur</p>
-              <ul class="timeline-points">
-                <li>Specializing in Artificial Intelligence and Machine Learning</li>
-                <li>Core coursework: Data Structures, Algorithms, OS, DBMS, Networks, ML, NLP</li>
-                <li>Active participant in coding clubs and tech events</li>
-              </ul>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <h3>Higher Secondary (12th)</h3>
-                <span class="timeline-badge">2022 – 2024</span>
-              </div>
-              <p class="timeline-subtitle">Science Stream (PCM + CS)</p>
-              <p class="timeline-institution">Maharashtra State Board</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
+    <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
     <section id="skills" class="section skills-section">
       <div class="container">
-        <h2 class="section-title" data-animate>Technical <span class="accent-text">Skills</span></h2>
+        <div class="section-header" data-animate>
+          <span class="section-index">02</span>
+          <h2 class="section-title">Technical Proficiency</h2>
+          <div class="section-line"></div>
+        </div>
+
         <div class="skills-grid" data-animate>
 
           <div class="skill-category">
-            <h3 class="skill-cat-title">Languages</h3>
+            <div class="skill-cat-header">
+              <span class="skill-cat-index">01</span>
+              <h3 class="skill-cat-title">Languages</h3>
+            </div>
             <div class="skill-tags">
               <span class="skill-tag">Python</span>
               <span class="skill-tag">C++</span>
@@ -198,21 +214,27 @@
           </div>
 
           <div class="skill-category">
-            <h3 class="skill-cat-title">Software Engineering</h3>
+            <div class="skill-cat-header">
+              <span class="skill-cat-index">02</span>
+              <h3 class="skill-cat-title">AI &amp; Machine Learning</h3>
+            </div>
             <div class="skill-tags">
-              <span class="skill-tag">Data Structures &amp; Algorithms</span>
-              <span class="skill-tag">OOP</span>
-              <span class="skill-tag">REST APIs</span>
-              <span class="skill-tag">Microservices</span>
-              <span class="skill-tag">SDLC</span>
-              <span class="skill-tag">Agile</span>
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">NLP</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">TF-IDF</span>
+              <span class="skill-tag">PCA</span>
+              <span class="skill-tag">ANN</span>
             </div>
           </div>
 
           <div class="skill-category">
-            <h3 class="skill-cat-title">Mobile &amp; Backend</h3>
+            <div class="skill-cat-header">
+              <span class="skill-cat-index">03</span>
+              <h3 class="skill-cat-title">Mobile &amp; Backend</h3>
+            </div>
             <div class="skill-tags">
               <span class="skill-tag">Flutter</span>
               <span class="skill-tag">Firebase Auth</span>
@@ -226,7 +248,10 @@
           </div>
 
           <div class="skill-category">
-            <h3 class="skill-cat-title">Web &amp; Databases</h3>
+            <div class="skill-cat-header">
+              <span class="skill-cat-index">04</span>
+              <h3 class="skill-cat-title">Web &amp; Databases</h3>
+            </div>
             <div class="skill-tags">
               <span class="skill-tag">HTML5</span>
               <span class="skill-tag">CSS3</span>
@@ -238,18 +263,31 @@
           </div>
 
           <div class="skill-category">
-            <h3 class="skill-cat-title">AI &amp; Systems</h3>
+            <div class="skill-cat-header">
+              <span class="skill-cat-index">05</span>
+              <h3 class="skill-cat-title">Software Engineering</h3>
+            </div>
             <div class="skill-tags">
-              <span class="skill-tag">Machine Learning</span>
-              <span class="skill-tag">NLP</span>
-              <span class="skill-tag">Scikit-learn</span>
-              <span class="skill-tag">NumPy</span>
-              <span class="skill-tag">OpenCV</span>
-              <span class="skill-tag">TF-IDF</span>
-              <span class="skill-tag">PCA</span>
-              <span class="skill-tag">ANN</span>
+              <span class="skill-tag">Data Structures &amp; Algorithms</span>
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Microservices</span>
+              <span class="skill-tag">SDLC</span>
+              <span class="skill-tag">Agile</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <span class="skill-cat-index">06</span>
+              <h3 class="skill-cat-title">Networks &amp; Systems</h3>
+            </div>
+            <div class="skill-tags">
               <span class="skill-tag">NS-3</span>
               <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Network Systems</span>
             </div>
           </div>
 
@@ -257,100 +295,215 @@
       </div>
     </section>
 
+    <!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
     <section id="projects" class="section projects-section">
       <div class="container">
-        <h2 class="section-title" data-animate>Selected <span class="accent-text">Projects</span></h2>
+        <div class="section-header" data-animate>
+          <span class="section-index">03</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <div class="section-line"></div>
+        </div>
 
         <div class="filter-buttons" id="project-filters" data-animate>
           <button class="filter-btn active" id="filter-all"      data-filter="all">All</button>
-          <button class="filter-btn"         id="filter-flutter" data-filter="flutter">Flutter/Mobile</button>
+          <button class="filter-btn"         id="filter-flutter" data-filter="flutter">Flutter / Mobile</button>
           <button class="filter-btn"         id="filter-ml"      data-filter="ml">AI / ML</button>
           <button class="filter-btn"         id="filter-network" data-filter="network">Networks</button>
         </div>
 
-        <div class="projects-grid" id="projects-grid">
+        <div class="projects-showcase" id="projects-grid">
 
-          <article class="project-card" data-category="flutter" data-animate>
-            <div class="project-card-header">
-              <div class="project-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-              <div class="project-links">
+          <!-- Project 01 — EmpFlow (Featured) -->
+          <article class="project-card project-featured" data-category="flutter" data-animate>
+            <div class="project-number" aria-hidden="true">01</div>
+            <div class="project-body">
+              <div class="project-header">
+                <div class="project-meta-row">
+                  <span class="project-year">2026</span>
+                  <span class="project-status">Production</span>
+                </div>
+                <h3 class="project-title">EmpFlow</h3>
+                <p class="project-subtitle">Cloud-Based Employee Database &amp; Workforce Management</p>
+              </div>
+              <p class="project-description">
+                A role-governed enterprise mobility platform built for Reliance's Petchem IT division.
+                Features employee CRUD, Firebase Auth, smart QR identification (~&lt;1 sec scan), PDF/Excel export,
+                FCM push notifications, and ~85% faster Firestore lookups.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Firestore</span>
+                <span class="tech-tag">FCM</span>
+              </div>
+              <div class="project-results">
+                <div class="result-item">
+                  <span class="result-value">~85%</span>
+                  <span class="result-label">Faster Lookups</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-value">&lt;1s</span>
+                  <span class="result-label">QR Scan Time</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-value">150+</span>
+                  <span class="result-label">Records Validated</span>
+                </div>
+              </div>
+              <div class="project-actions">
                 <a href="https://github.com/soumyasurya1309" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="EmpFlow GitHub" title="View Code">
-                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  <span>View Code</span>
                 </a>
               </div>
             </div>
-            <h3 class="project-title">EmpFlow</h3>
-            <p class="project-subtitle">Cloud-Based Employee Database &amp; Workforce Management</p>
-            <p class="project-description">
-              A role-governed enterprise mobility platform built for Reliance's Petchem IT division.
-              Features employee CRUD, Firebase Auth, smart QR identification (~&lt;1 sec scan), PDF/Excel export,
-              FCM push notifications, and ~85% faster Firestore lookups.
-            </p>
-            <div class="project-tech-tags">
-              <span class="tech-tag">Flutter</span>
-              <span class="tech-tag">Dart</span>
-              <span class="tech-tag">Firebase</span>
-              <span class="tech-tag">Firestore</span>
-              <span class="tech-tag">FCM</span>
-            </div>
-            <div class="project-meta">
-              <span class="project-year">2026</span>
-              <span class="project-status">Production</span>
+            <!-- Visual: App architecture diagram -->
+            <div class="project-visual" aria-hidden="true">
+              <svg class="arch-diagram" viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="95" y="10" width="90" height="32" rx="4" stroke="var(--accent)" stroke-width="1.2"/>
+                <text x="140" y="30" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--font-mono)">Flutter UI</text>
+                <line x1="140" y1="42" x2="140" y2="60" stroke="var(--accent)" stroke-width="1" stroke-dasharray="4 3"/>
+                <rect x="80" y="60" width="55" height="28" rx="4" stroke="var(--border-visible)" stroke-width="1"/>
+                <text x="107" y="78" text-anchor="middle" fill="var(--text-subtle)" font-size="8" font-family="var(--font-mono)">Auth</text>
+                <rect x="145" y="60" width="55" height="28" rx="4" stroke="var(--border-visible)" stroke-width="1"/>
+                <text x="172" y="78" text-anchor="middle" fill="var(--text-subtle)" font-size="8" font-family="var(--font-mono)">FCM</text>
+                <line x1="107" y1="88" x2="140" y2="110" stroke="var(--border-visible)" stroke-width="1" stroke-dasharray="4 3"/>
+                <line x1="172" y1="88" x2="140" y2="110" stroke="var(--border-visible)" stroke-width="1" stroke-dasharray="4 3"/>
+                <rect x="85" y="110" width="110" height="32" rx="4" stroke="var(--accent)" stroke-width="1.2"/>
+                <text x="140" y="130" text-anchor="middle" fill="var(--text-muted)" font-size="9" font-family="var(--font-mono)">Cloud Firestore</text>
+                <line x1="140" y1="142" x2="100" y2="165" stroke="var(--border-visible)" stroke-width="1" stroke-dasharray="4 3"/>
+                <line x1="140" y1="142" x2="180" y2="165" stroke="var(--border-visible)" stroke-width="1" stroke-dasharray="4 3"/>
+                <rect x="60" y="165" width="75" height="24" rx="4" stroke="var(--border-visible)" stroke-width="1"/>
+                <text x="97" y="181" text-anchor="middle" fill="var(--text-subtle)" font-size="7" font-family="var(--font-mono)">PDF / Excel</text>
+                <rect x="145" y="165" width="75" height="24" rx="4" stroke="var(--border-visible)" stroke-width="1"/>
+                <text x="182" y="181" text-anchor="middle" fill="var(--text-subtle)" font-size="7" font-family="var(--font-mono)">QR Engine</text>
+              </svg>
             </div>
           </article>
 
+          <!-- Project 02 — MANET -->
           <article class="project-card" data-category="network" data-animate>
-            <div class="project-card-header">
-              <div class="project-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4M8.5 17.5l3-2M15.5 17.5l-3-2"/></svg></div>
-              <div class="project-links">
+            <div class="project-number" aria-hidden="true">02</div>
+            <div class="project-body">
+              <div class="project-header">
+                <div class="project-meta-row">
+                  <span class="project-year">2025</span>
+                  <span class="project-status status-patent">Patent Published</span>
+                </div>
+                <h3 class="project-title">Hybrid MANET Routing Protocol Simulation</h3>
+                <p class="project-subtitle">NS-3 / C++ / Network Systems</p>
+              </div>
+              <p class="project-description">
+                Simulated AODV and DSDV across 50+ node mobile ad-hoc networks achieving ~94% packet
+                delivery ratio. Analyzed latency, throughput, and routing overhead. Work contributed
+                to a published patent application.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">NS-3</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Network Systems</span>
+              </div>
+              <div class="project-results">
+                <div class="result-item">
+                  <span class="result-value">~94%</span>
+                  <span class="result-label">Packet Delivery</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-value">50+</span>
+                  <span class="result-label">Nodes Simulated</span>
+                </div>
+              </div>
+              <div class="project-actions">
                 <a href="https://github.com/soumyasurya1309" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="MANET GitHub" title="View Code">
-                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  <span>View Code</span>
                 </a>
               </div>
             </div>
-            <h3 class="project-title">Hybrid MANET Routing Protocol Simulation</h3>
-            <p class="project-subtitle">NS-3 / C++ / Network Systems</p>
-            <p class="project-description">
-              Simulated AODV and DSDV across 50+ node mobile ad-hoc networks achieving ~94% packet
-              delivery ratio. Analyzed latency, throughput, and routing overhead. Work contributed
-              to a published patent application.
-            </p>
-            <div class="project-tech-tags">
-              <span class="tech-tag">NS-3</span>
-              <span class="tech-tag">C++</span>
-              <span class="tech-tag">Network Systems</span>
-            </div>
-            <div class="project-meta">
-              <span class="project-year">2025</span>
-              <span class="project-status patent">Patented</span>
+            <!-- Visual: Network topology diagram -->
+            <div class="project-visual" aria-hidden="true">
+              <svg class="network-diagram" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Nodes -->
+                <circle cx="120" cy="40" r="10" stroke="var(--accent)" stroke-width="1.2" fill="none"/>
+                <circle cx="60" cy="90" r="8" stroke="var(--border-visible)" stroke-width="1" fill="none"/>
+                <circle cx="180" cy="90" r="8" stroke="var(--border-visible)" stroke-width="1" fill="none"/>
+                <circle cx="40" cy="140" r="7" stroke="var(--border-visible)" stroke-width="1" fill="none"/>
+                <circle cx="100" cy="150" r="7" stroke="var(--border-visible)" stroke-width="1" fill="none"/>
+                <circle cx="150" cy="145" r="7" stroke="var(--border-visible)" stroke-width="1" fill="none"/>
+                <circle cx="200" cy="140" r="7" stroke="var(--border-visible)" stroke-width="1" fill="none"/>
+                <!-- Links -->
+                <line x1="120" y1="50" x2="60" y2="82" stroke="var(--accent)" stroke-width="0.8" opacity="0.6"/>
+                <line x1="120" y1="50" x2="180" y2="82" stroke="var(--accent)" stroke-width="0.8" opacity="0.6"/>
+                <line x1="60" y1="98" x2="40" y2="133" stroke="var(--border-visible)" stroke-width="0.8" opacity="0.5"/>
+                <line x1="60" y1="98" x2="100" y2="143" stroke="var(--border-visible)" stroke-width="0.8" opacity="0.5"/>
+                <line x1="180" y1="98" x2="150" y2="138" stroke="var(--border-visible)" stroke-width="0.8" opacity="0.5"/>
+                <line x1="180" y1="98" x2="200" y2="133" stroke="var(--border-visible)" stroke-width="0.8" opacity="0.5"/>
+                <line x1="100" y1="150" x2="150" y2="145" stroke="var(--border-visible)" stroke-width="0.8" opacity="0.4" stroke-dasharray="4 3"/>
+                <!-- Labels -->
+                <text x="120" y="44" text-anchor="middle" fill="var(--accent)" font-size="7" font-family="var(--font-mono)">SRC</text>
+                <text x="120" y="175" text-anchor="middle" fill="var(--text-subtle)" font-size="7" font-family="var(--font-mono)">AODV / DSDV · 50+ Nodes</text>
+              </svg>
             </div>
           </article>
 
+          <!-- Project 03 — Fake News Detection -->
           <article class="project-card" data-category="ml" data-animate>
-            <div class="project-card-header">
-              <div class="project-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12h8M12 8l4 4-4 4"/></svg></div>
-              <div class="project-links">
+            <div class="project-number" aria-hidden="true">03</div>
+            <div class="project-body">
+              <div class="project-header">
+                <div class="project-meta-row">
+                  <span class="project-year">2025</span>
+                  <span class="project-status">Research</span>
+                </div>
+                <h3 class="project-title">Fake News Detection System</h3>
+                <p class="project-subtitle">Python / NLP / Machine Learning</p>
+              </div>
+              <p class="project-description">
+                Built an NLP classifier achieving ~91% accuracy across 8,000+ articles using TF-IDF
+                vectorization, tokenization, and stopword removal. Validated with cross-validation and
+                precision-recall analysis.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">TF-IDF</span>
+                <span class="tech-tag">Scikit-learn</span>
+              </div>
+              <div class="project-results">
+                <div class="result-item">
+                  <span class="result-value">~91%</span>
+                  <span class="result-label">Accuracy</span>
+                </div>
+                <div class="result-item">
+                  <span class="result-value">8,000+</span>
+                  <span class="result-label">Articles Processed</span>
+                </div>
+              </div>
+              <div class="project-actions">
                 <a href="https://github.com/soumyasurya1309" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Fake News GitHub" title="View Code">
-                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  <span>View Code</span>
                 </a>
               </div>
             </div>
-            <h3 class="project-title">Fake News Detection System</h3>
-            <p class="project-subtitle">Python / NLP / Machine Learning</p>
-            <p class="project-description">
-              Built an NLP classifier achieving ~91% accuracy across 8,000+ articles using TF-IDF
-              vectorization, tokenization, and stopword removal. Validated with cross-validation and
-              precision-recall analysis.
-            </p>
-            <div class="project-tech-tags">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">NLP</span>
-              <span class="tech-tag">TF-IDF</span>
-              <span class="tech-tag">Scikit-learn</span>
-            </div>
-            <div class="project-meta">
-              <span class="project-year">2025</span>
-              <span class="project-status">Research</span>
+            <!-- Visual: ML Pipeline diagram -->
+            <div class="project-visual" aria-hidden="true">
+              <svg class="ml-pipeline" viewBox="0 0 260 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="65" width="55" height="30" rx="4" stroke="var(--border-visible)" stroke-width="1"/>
+                <text x="37" y="84" text-anchor="middle" fill="var(--text-subtle)" font-size="8" font-family="var(--font-mono)">Raw Text</text>
+                <line x1="65" y1="80" x2="80" y2="80" stroke="var(--accent)" stroke-width="1" marker-end="url(#arrowhead)"/>
+                <rect x="80" y="65" width="55" height="30" rx="4" stroke="var(--accent)" stroke-width="1.2"/>
+                <text x="107" y="84" text-anchor="middle" fill="var(--text-muted)" font-size="8" font-family="var(--font-mono)">TF-IDF</text>
+                <line x1="135" y1="80" x2="150" y2="80" stroke="var(--accent)" stroke-width="1" marker-end="url(#arrowhead)"/>
+                <rect x="150" y="65" width="55" height="30" rx="4" stroke="var(--accent)" stroke-width="1.2"/>
+                <text x="177" y="84" text-anchor="middle" fill="var(--text-muted)" font-size="8" font-family="var(--font-mono)">Model</text>
+                <line x1="205" y1="80" x2="220" y2="80" stroke="var(--accent)" stroke-width="1" marker-end="url(#arrowhead)"/>
+                <rect x="220" y="68" width="30" height="24" rx="12" stroke="var(--accent)" stroke-width="1.2"/>
+                <text x="235" y="84" text-anchor="middle" fill="var(--accent)" font-size="8" font-family="var(--font-mono)">91%</text>
+                <text x="130" y="130" text-anchor="middle" fill="var(--text-subtle)" font-size="7" font-family="var(--font-mono)">Tokenize → Vectorize → Classify → Validate</text>
+                <defs><marker id="arrowhead" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto"><polygon points="0 0, 6 2, 0 4" fill="var(--accent)"/></marker></defs>
+              </svg>
             </div>
           </article>
 
@@ -358,87 +511,110 @@
       </div>
     </section>
 
+    <!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
     <section id="experience" class="section experience-section">
       <div class="container">
-        <h2 class="section-title" data-animate>Internship &amp; <span class="accent-text">Experience</span></h2>
-        <div class="experience-grid" data-animate>
+        <div class="section-header" data-animate>
+          <span class="section-index">04</span>
+          <h2 class="section-title">Experience</h2>
+          <div class="section-line"></div>
+        </div>
 
-          <article class="experience-card">
-            <div class="exp-header">
-              <div class="exp-company-logo">RIL</div>
-              <div class="exp-info">
-                <h3 class="exp-role">Software Engineering Intern</h3>
-                <p class="exp-company">Reliance Industries Limited</p>
-                <p class="exp-meta">Navi Mumbai &bull; May – Jun 2026</p>
+        <div class="experience-timeline" data-animate>
+
+          <article class="exp-entry">
+            <div class="exp-index">01</div>
+            <div class="exp-content">
+              <div class="exp-header-row">
+                <div>
+                  <h3 class="exp-role">Software Engineering Intern</h3>
+                  <p class="exp-company">Reliance Industries Limited</p>
+                </div>
+                <div class="exp-meta-right">
+                  <span class="exp-location">Navi Mumbai</span>
+                  <span class="exp-date">May – Jun 2026</span>
+                </div>
               </div>
+              <ul class="exp-points">
+                <li>Engineered enterprise mobility solutions for Reliance's Petchem IT division within a Fortune 500, Agile SDLC environment.</li>
+                <li>Built <strong>EmpFlow</strong> — a cross-platform employee database and workforce management system using Flutter, Dart, Firebase, and Cloud Firestore.</li>
+                <li>Implemented employee CRUD, Firebase Authentication, admin/staff role-based access control, real-time multi-field search, QR generation/scanning, PDF/Excel exports, and FCM push notifications.</li>
+                <li>Optimized Firestore collections, indexed queries, and stream caching — internal testing showed <strong>~85% faster lookup</strong>, 150+ records validated, and <strong>&lt;1 sec QR scan-to-profile time</strong>.</li>
+                <li>Used Git/GitHub for version control and deployed the web application through Firebase Hosting.</li>
+              </ul>
             </div>
-            <ul class="exp-points">
-              <li>Engineered enterprise mobility solutions for Reliance's Petchem IT division within a Fortune 500, Agile SDLC environment.</li>
-              <li>Built <strong>EmpFlow</strong> — a cross-platform employee database and workforce management system using Flutter, Dart, Firebase, and Cloud Firestore.</li>
-              <li>Implemented employee CRUD, Firebase Authentication, admin/staff role-based access control, real-time multi-field search, QR generation/scanning, PDF/Excel exports, and FCM push notifications.</li>
-              <li>Optimized Firestore collections, indexed queries, and stream caching — internal testing showed <strong>~85% faster lookup</strong>, 150+ records validated, and <strong>&lt;1 sec QR scan-to-profile time</strong>.</li>
-              <li>Used Git/GitHub for version control and deployed the web application through Firebase Hosting.</li>
-            </ul>
           </article>
 
-          <article class="experience-card">
-            <div class="exp-header">
-              <div class="exp-company-logo">iS</div>
-              <div class="exp-info">
-                <h3 class="exp-role">Machine Learning Intern</h3>
-                <p class="exp-company">iStudio Training Program</p>
-                <p class="exp-meta">2025</p>
+          <article class="exp-entry">
+            <div class="exp-index">02</div>
+            <div class="exp-content">
+              <div class="exp-header-row">
+                <div>
+                  <h3 class="exp-role">Machine Learning Intern</h3>
+                  <p class="exp-company">iStudio Training Program</p>
+                </div>
+                <div class="exp-meta-right">
+                  <span class="exp-date">2025</span>
+                </div>
               </div>
+              <ul class="exp-points">
+                <li>Architected an end-to-end face recognition pipeline using PCA, ANN, Python, NumPy, and OpenCV.</li>
+                <li>Improved robustness across varying lighting and poses through preprocessing and hyperparameter tuning while reducing inference latency.</li>
+              </ul>
             </div>
-            <ul class="exp-points">
-              <li>Architected an end-to-end face recognition pipeline using PCA, ANN, Python, NumPy, and OpenCV.</li>
-              <li>Improved robustness across varying lighting and poses through preprocessing and hyperparameter tuning while reducing inference latency.</li>
-            </ul>
           </article>
 
         </div>
       </div>
     </section>
 
+    <!-- ═══════════════════════ ACHIEVEMENTS ═══════════════════════ -->
     <section id="achievements" class="section achievements-section">
       <div class="container">
-        <h2 class="section-title" data-animate>Achievements &amp; <span class="accent-text">Publications</span></h2>
+        <div class="section-header" data-animate>
+          <span class="section-index">05</span>
+          <h2 class="section-title">Achievements &amp; Publications</h2>
+          <div class="section-line"></div>
+        </div>
+
         <div class="achievements-grid" data-animate>
 
-          <article class="achievement-card patent-card">
-            <div class="achievement-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-            <h3>Published Patent</h3>
-            <p class="achievement-title-text">Computer-Implemented MANET Routing Performance System</p>
-            <p class="achievement-meta">Application No. <strong>202521127182</strong></p>
-            <p class="achievement-meta">Published: <strong>January 2026</strong></p>
-            <p class="achievement-description">
+          <article class="achievement-entry achievement-patent">
+            <div class="achievement-badge">Patent</div>
+            <h3>Published Patent Application</h3>
+            <p class="achievement-detail">Computer-Implemented MANET Routing Performance System</p>
+            <div class="achievement-meta-list">
+              <span>Application No. <strong>202521127182</strong></span>
+              <span>Published: <strong>January 2026</strong></span>
+            </div>
+            <p class="achievement-desc">
               Patent covers algorithms and simulation methods for optimizing AODV and DSDV routing
               protocols in mobile ad-hoc networks achieving up to 94% packet delivery ratio.
             </p>
           </article>
 
-          <article class="achievement-card">
-            <div class="achievement-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-            <h3>EmpFlow Performance</h3>
-            <p class="achievement-description">
+          <article class="achievement-entry">
+            <div class="achievement-badge">Performance</div>
+            <h3>EmpFlow Optimization</h3>
+            <p class="achievement-desc">
               Achieved <strong>~85% faster Firestore lookup</strong> performance with 150+ records validated and
               <strong>&lt;1 sec QR scan-to-profile time</strong> in production at Reliance Industries.
             </p>
           </article>
 
-          <article class="achievement-card">
-            <div class="achievement-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <article class="achievement-entry">
+            <div class="achievement-badge">Research</div>
             <h3>AI Research — 91% Accuracy</h3>
-            <p class="achievement-description">
+            <p class="achievement-desc">
               Fake News Detection NLP classifier achieving <strong>~91% accuracy across 8,000+ articles</strong>
               using TF-IDF, tokenization, and logistic regression with cross-validation.
             </p>
           </article>
 
-          <article class="achievement-card">
-            <div class="achievement-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92V19a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h2.08a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <article class="achievement-entry">
+            <div class="achievement-badge">Research</div>
             <h3>Network Research — 94% PDR</h3>
-            <p class="achievement-description">
+            <p class="achievement-desc">
               Simulated 50+ node MANET achieving <strong>~94% packet delivery ratio</strong> across AODV and DSDV
               protocols with comprehensive latency and throughput analysis.
             </p>
@@ -448,10 +624,58 @@
       </div>
     </section>
 
+    <!-- ═══════════════════════ EDUCATION ═══════════════════════ -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-index">06</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="education-grid" data-animate>
+
+          <article class="edu-entry">
+            <div class="edu-date-col">
+              <span class="edu-years">2024 – 2028</span>
+            </div>
+            <div class="edu-content">
+              <h3>B.Tech in Computer Science</h3>
+              <p class="edu-spec">AI/ML Specialization</p>
+              <p class="edu-institution">Symbiosis Institute of Technology, Nagpur</p>
+              <ul class="edu-details">
+                <li>Specializing in Artificial Intelligence and Machine Learning</li>
+                <li>Core coursework: Data Structures, Algorithms, OS, DBMS, Networks, ML, NLP</li>
+                <li>Active participant in coding clubs and tech events</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="edu-entry">
+            <div class="edu-date-col">
+              <span class="edu-years">2022 – 2024</span>
+            </div>
+            <div class="edu-content">
+              <h3>Higher Secondary (12th)</h3>
+              <p class="edu-spec">Science Stream (PCM + CS)</p>
+              <p class="edu-institution">Maharashtra State Board</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ CERTIFICATES ═══════════════════════ -->
     <section id="certificates" class="section certificates-section">
       <div class="container">
-        <h2 class="section-title" data-animate>Certifications</h2>
+        <div class="section-header" data-animate>
+          <span class="section-index">07</span>
+          <h2 class="section-title">Certifications</h2>
+          <div class="section-line"></div>
+        </div>
 
+        <!-- Modal -->
         <div id="cert-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
           <div class="modal-overlay" id="modal-overlay"></div>
           <div class="modal-content">
@@ -463,9 +687,9 @@
 
         <div class="certificates-grid" data-animate>
 
-          <article class="cert-card" id="cert-google-ai">
-            <div class="cert-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-            <div class="cert-info">
+          <article class="cert-entry" id="cert-google-ai">
+            <div class="cert-index">01</div>
+            <div class="cert-body">
               <h3>Google AI Professional Certificate</h3>
               <p class="cert-issuer">Google &bull; via Coursera</p>
               <p class="cert-date">April 2026</p>
@@ -473,9 +697,9 @@
             <button class="cert-preview-btn" data-cert="Google AI Professional Certificate" aria-label="Preview Google AI certificate">Preview</button>
           </article>
 
-          <article class="cert-card" id="cert-deloitte">
-            <div class="cert-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
-            <div class="cert-info">
+          <article class="cert-entry" id="cert-deloitte">
+            <div class="cert-index">02</div>
+            <div class="cert-body">
               <h3>Deloitte Technology Virtual Job Simulation</h3>
               <p class="cert-issuer">Deloitte &bull; Forage</p>
               <p class="cert-date">2026</p>
@@ -483,9 +707,9 @@
             <button class="cert-preview-btn" data-cert="Deloitte Technology Virtual Job Simulation" aria-label="Preview Deloitte certificate">Preview</button>
           </article>
 
-          <article class="cert-card" id="cert-redhat-admin">
-            <div class="cert-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M4.93 4.93l1.41 1.41M12 2v2M12 20v2M2 12h2M20 12h2M17.66 17.66l-1.41-1.41M6.34 17.66l1.41-1.41"/></svg></div>
-            <div class="cert-info">
+          <article class="cert-entry" id="cert-redhat-admin">
+            <div class="cert-index">03</div>
+            <div class="cert-body">
               <h3>Red Hat System Administration I (RH124)</h3>
               <p class="cert-issuer">Red Hat Academy</p>
               <p class="cert-date">2025</p>
@@ -493,9 +717,9 @@
             <button class="cert-preview-btn" data-cert="Red Hat System Administration I" aria-label="Preview Red Hat admin certificate">Preview</button>
           </article>
 
-          <article class="cert-card" id="cert-redhat-python">
-            <div class="cert-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-            <div class="cert-info">
+          <article class="cert-entry" id="cert-redhat-python">
+            <div class="cert-index">04</div>
+            <div class="cert-body">
               <h3>Python Programming</h3>
               <p class="cert-issuer">Red Hat Academy</p>
               <p class="cert-date">2025</p>
@@ -504,35 +728,36 @@
           </article>
 
         </div>
-
       </div>
     </section>
 
+    <!-- ═══════════════════════ CONTRIBUTIONS ═══════════════════════ -->
     <section id="contributions" class="section contributions-section">
       <div class="container">
-        <h2 class="section-title" data-animate>Contributions &amp; <span class="accent-text">Participation</span></h2>
+        <div class="section-header" data-animate>
+          <span class="section-index">—</span>
+          <h2 class="section-title">Contributions &amp; Participation</h2>
+          <div class="section-line"></div>
+        </div>
+
         <div class="contributions-grid" data-animate>
 
-          <div class="contrib-card">
-            <div class="contrib-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></div>
+          <div class="contrib-entry">
             <h3>Open Source</h3>
             <p>Active contributor to GitHub projects. Uses Git for version control and collaborative development in team environments.</p>
           </div>
 
-          <div class="contrib-card">
-            <div class="contrib-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <div class="contrib-entry">
             <h3>Hackathons</h3>
             <p>Participates in technical hackathons and coding competitions to apply skills under real-world constraints.</p>
           </div>
 
-          <div class="contrib-card">
-            <div class="contrib-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
+          <div class="contrib-entry">
             <h3>Academic Research</h3>
             <p>Published a patent in network systems research alongside faculty at SIT Nagpur while still in first year.</p>
           </div>
 
-          <div class="contrib-card">
-            <div class="contrib-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="17"/><line x1="9" y1="14.5" x2="15" y2="14.5"/></svg></div>
+          <div class="contrib-entry">
             <h3>Industry Internships</h3>
             <p>Two industry internships at Reliance Industries Limited and iStudio Training Program, contributing to real production systems.</p>
           </div>
@@ -541,11 +766,16 @@
       </div>
     </section>
 
+    <!-- ═══════════════════════ GALLERY ═══════════════════════ -->
     <section id="gallery" class="section gallery-section">
       <div class="container">
-        <h2 class="section-title" data-animate>Photo <span class="accent-text">Gallery</span></h2>
-        <p class="gallery-hint" data-animate>Click on any image to preview it.</p>
+        <div class="section-header" data-animate>
+          <span class="section-index">08</span>
+          <h2 class="section-title">Photo Gallery</h2>
+          <div class="section-line"></div>
+        </div>
 
+        <!-- Gallery Modal -->
         <div id="gallery-modal" class="modal" role="dialog" aria-modal="true" aria-label="Gallery image preview">
           <div class="modal-overlay" id="gallery-modal-overlay"></div>
           <div class="modal-content gallery-modal-content">
@@ -558,27 +788,41 @@
         <div class="gallery-grid" id="gallery-grid" data-animate>
           <div class="gallery-item" data-img="images/profile.jpg" data-caption="Soumya Suryawanshi – Professional Photo">
             <img src="images/profile.jpg" alt="Soumya Suryawanshi professional photo" loading="lazy" />
-            <div class="gallery-overlay"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-overlay">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
           </div>
           <div class="gallery-item" data-img="images/gallery/photo1.jpg" data-caption="At SIT Nagpur – Classroom Session">
             <img src="images/gallery/photo1.jpg" alt="At SIT Nagpur classroom" loading="lazy" />
-            <div class="gallery-overlay"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-overlay">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
           </div>
           <div class="gallery-item" data-img="images/gallery/photo2.jpg" data-caption="Casual – Soumya Suryawanshi">
             <img src="images/gallery/photo2.jpg" alt="Soumya casual photo" loading="lazy" />
-            <div class="gallery-overlay"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-overlay">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
           </div>
           <div class="gallery-item" data-img="images/gallery/photo3.jpg" data-caption="Reliance Industries – Navi Mumbai">
             <img src="images/gallery/photo3.jpg" alt="Reliance Industries Navi Mumbai campus" loading="lazy" />
-            <div class="gallery-overlay"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="gallery-overlay">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
     <section id="contact" class="section contact-section">
       <div class="container">
-        <h2 class="section-title" data-animate>Get In <span class="accent-text">Touch</span></h2>
+        <div class="section-header" data-animate>
+          <span class="section-index">09</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+
         <p class="contact-subtitle" data-animate>
           I'm open to internships, full-time roles, research collaborations, and interesting project ideas.
         </p>
@@ -586,40 +830,25 @@
         <div class="contact-grid" data-animate>
 
           <div class="contact-info">
-            <div class="contact-info-card">
-              <div class="contact-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-              <div>
-                <h3>Email</h3>
-                <a href="mailto:soumyasuryawanshi139@gmail.com">soumyasuryawanshi139@gmail.com</a>
-              </div>
+            <div class="contact-card">
+              <span class="contact-label">Email</span>
+              <a href="mailto:soumyasuryawanshi139@gmail.com">soumyasuryawanshi139@gmail.com</a>
             </div>
-            <div class="contact-info-card">
-              <div class="contact-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92V19a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h2.08a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
-              <div>
-                <h3>Phone</h3>
-                <a href="tel:+917709299542">+91 77092 99542</a>
-              </div>
+            <div class="contact-card">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+917709299542">+91 77092 99542</a>
             </div>
-            <div class="contact-info-card">
-              <div class="contact-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-              <div>
-                <h3>Location</h3>
-                <p>Nagpur, Maharashtra, India</p>
-              </div>
+            <div class="contact-card">
+              <span class="contact-label">Location</span>
+              <p>Nagpur, Maharashtra, India</p>
             </div>
-            <div class="contact-info-card">
-              <div class="contact-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
-              <div>
-                <h3>LinkedIn</h3>
-                <a href="https://linkedin.com/in/soumyasuryawanshi" target="_blank" rel="noopener noreferrer">linkedin.com/in/soumyasuryawanshi</a>
-              </div>
+            <div class="contact-card">
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://linkedin.com/in/soumyasuryawanshi" target="_blank" rel="noopener noreferrer">linkedin.com/in/soumyasuryawanshi</a>
             </div>
-            <div class="contact-info-card">
-              <div class="contact-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></div>
-              <div>
-                <h3>GitHub</h3>
-                <a href="https://github.com/soumyasurya1309" target="_blank" rel="noopener noreferrer">github.com/soumyasurya1309</a>
-              </div>
+            <div class="contact-card">
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/soumyasurya1309" target="_blank" rel="noopener noreferrer">github.com/soumyasurya1309</a>
             </div>
           </div>
 
@@ -645,7 +874,8 @@
               <span class="form-error" id="error-message"></span>
             </div>
             <button type="submit" class="btn btn-primary btn-full" id="contact-submit-btn">
-              Send Message &#10148;
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
             </button>
             <div id="form-success-msg" class="form-success" role="alert" aria-live="polite"></div>
           </form>
@@ -656,22 +886,28 @@
 
   </main>
 
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
   <footer id="main-footer">
     <div class="footer-container">
-      <div class="footer-brand">
-        <span class="footer-logo">SS<span class="logo-dot">.</span></span>
-        <p>Soumya Suryawanshi — Software Engineer &amp; AI/ML Developer</p>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">SS<span class="logo-dot">.</span></span>
+          <p>Soumya Suryawanshi — The Compute Archive</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+          <a href="https://github.com/soumyasurya1309" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
       </div>
-      <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-        <a href="https://github.com/soumyasurya1309" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </nav>
-      <p class="footer-copyright">
-        &copy; <span id="copyright-year"></span> Soumya Suryawanshi. All rights reserved.
-      </p>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span id="copyright-year"></span> Soumya Suryawanshi. All rights reserved.
+        </p>
+        <p class="footer-tagline">Designed &amp; built as The Compute Archive.</p>
+      </div>
     </div>
   </footer>
 
